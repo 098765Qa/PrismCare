@@ -1,0 +1,203 @@
+
+.admin-nav {
+  background: var(--deep-blue);
+  color: var(--white);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.admin-nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.admin-content {
+  padding: 30px;
+  background: var(--light-gray);
+  min-height: 100vh;
+}
+
+.admin-footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--white);
+  border-top: 1px solid #ddd;
+}
+
+
+/* Insights Dashboard Grid */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.insight-card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.insight-card h4 {
+  margin: 0 0 10px;
+  color: var(--purple);
+}
+
+.insight-card p {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--deep-blue);
+}
+
+/* Scheduling Dashboard Enhancements */
+.status-badge {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-pending {
+  background: var(--light-gray);
+  color: var(--bright-blue);
+}
+
+.status-accepted {
+  background: #28a745;
+  color: var(--white);
+}
+
+.status-rejected {
+  background: #dc3545;
+  color: var(--white);
+}
+
+.status-auto {
+  background: var(--orange);
+  color: var(--white);
+}
+
+/* Medication Dashboard Enhancements */
+.med-risk-high {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+.med-risk-medium {
+  color: #ff6b00;
+  font-weight: 700;
+}
+
+.med-risk-low {
+  color: #28a745;
+  font-weight: 700;
+}
+
+/* Wellbeing Dashboard Enhancements */
+.wellbeing-good {
+  color: #28a745;
+  font-weight: 700;
+}
+
+.wellbeing-medium {
+  color: #ff6b00;
+  font-weight: 700;
+}
+
+.wellbeing-poor {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+.severity-low {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.severity-medium {
+  color: #ff6b00;
+  font-weight: 600;
+}
+
+.severity-high {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+/* Compliance Dashboard Enhancements */
+.compliance-good {
+  color: #28a745;
+  font-weight: 700;
+}
+
+.compliance-medium {
+  color: #ff6b00;
+  font-weight: 700;
+}
+
+.compliance-poor {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+.issue-badge {
+  background: var(--orange);
+  color: var(--white);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Offline Sync Dashboard Enhancements */
+.conflict-yes {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+.conflict-no {
+  color: #28a745;
+  font-weight: 700;
+}
+
+.synced-yes {
+  color: #28a745;
+  font-weight: 700;
+}
+
+.synced-no {
+  color: #ff6b00;
+  font-weight: 700;
+}
+
+/* Analytics Dashboard Enhancements */
+.metric-badge {
+  background: var(--bright-blue);
+  color: var(--white);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.insight-count {
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.forecast-count {
+  color: var(--orange);
+  font-weight: 700;
+}
