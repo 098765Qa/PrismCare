@@ -1,0 +1,259 @@
+/* -----------------------------------------------------
+   CLIENT PORTAL STYLES
+   Calm, accessible, friendly, and easy to read
+----------------------------------------------------- */
+
+:root {
+  --deep-blue: hsl(263, 81%, 19%);
+  --bright-blue: #271f4d;
+  --purple: hsl(252, 97%, 23%);
+  --light-purple: #280777;
+  --orange: #ff6b00;
+
+  --white: #ffffff;
+  --light-gray: #f7f8fc;
+  --soft-gray: #e9ecf3;
+  --text: #1e1e1e;
+}
+
+/* Layout */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--light-gray);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Client Navbar */
+.client-nav {
+  background: var(--deep-blue);
+  color: var(--white);
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.client-logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.client-menu {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.client-menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.client-menu a:hover {
+  color: var(--orange);
+}
+
+.client-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.client-btn-small {
+  background: var(--orange);
+  color: var(--white);
+  padding: 7px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Page Content */
+.client-content {
+  padding: 25px;
+}
+
+/* Cards */
+.card {
+  background: var(--white);
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--purple);
+  font-size: 20px;
+}
+
+/* Summary Cards */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.summary-card {
+  background: var(--white);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.summary-card h4 {
+  margin: 0 0 8px;
+  color: var(--bright-blue);
+}
+
+.summary-card p {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--purple);
+}
+
+/* Tables */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table th {
+  background: var(--soft-gray);
+  padding: 12px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+/* Quick Links */
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.quick-link {
+  background: var(--purple);
+  color: var(--white);
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.quick-link:hover {
+  background: var(--light-purple);
+}
+
+/* Footer */
+.client-footer {
+  text-align: center;
+  padding: 25px;
+  background: var(--white);
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Care Plan Sections */
+.care-section {
+  margin-bottom: 20px;
+}
+
+.care-section h4 {
+  margin-bottom: 8px;
+  color: var(--bright-blue);
+  font-size: 17px;
+}
+
+.care-section ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.care-section ul li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* Visit Status Badges */
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-scheduled {
+  background: var(--soft-gray);
+  color: var(--bright-blue);
+}
+
+.status-completed {
+  background: #28a745;
+  color: var(--white);
+}
+
+.status-missed {
+  background: #dc3545;
+  color: var(--white);
+}
+
+/* Medication Status Badges */
+.med-status {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.med-given {
+  background: #28a745;
+  color: var(--white);
+}
+
+.med-missed {
+  background: #dc3545;
+  color: var(--white);
+}
+
+.med-pending {
+  background: var(--orange);
+  color: var(--white);
+}
+
+/* Document Download Button */
+.download-btn {
+  background: var(--purple);
+  color: var(--white);
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  background: var(--light-purple);
+}
